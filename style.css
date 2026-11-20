@@ -1,0 +1,151 @@
+body {
+    * {
+    box-sizing: border-box;  /* ظبط حساب الأحجام لظبط المسافات في المتصفحات*/
+}
+    font-family: Arial, sans-serif;
+    background-color: #080d1a;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.app {
+    background-color: #111a2e;
+    border: 1px solid #243b64;
+    border-radius: 16px;
+    width: 100%; /* بيخلي العناصر تاخد مساحه ميه في الميه من المتصفح ال موجود ولا تزيد عنه */
+    max-width: 550px; /*بيمنع العناصر تتجاوز العرض ال متحدد*/
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+}
+h1 {
+    color: #e0f2fe;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+.subtitle {
+    color: #8ba6c9;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.form-box{
+    background-color: #0c1426;
+    border: 1px solid #243b64;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+input {
+    display: block;
+    background-color: #101c33;
+    border: 1px solid #30496f;
+    border-radius: 8px;
+    padding: 12px;
+    width: 98%;
+    margin-bottom: 16px;
+    color: #e0f2fe;
+    font-size: 15px;
+}
+input:focus {
+    outline: none;
+    border-color: #00d9ff;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.4);
+}
+#saveBtn {
+    width: 98%;
+    background-color: #087cf5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#saveBtn:hover {
+    background-color: #00b8e6;
+}
+#message{
+    text-align: center;
+    color: #00e6a8;
+    font-weight: bold;
+    margin-top: 13px;
+}
+.list-box h2 {
+    color: #e0f2fe;
+    font-size: 20px;
+    border-bottom: 2px solid #243b64;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+.product-card {
+    background-color: #0c1426;
+    border: 1px solid #243b64;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+.product-card h1 {
+    font-size: 18px;
+    color: #e0f2fe;
+    text-align: left; 
+    margin-bottom: 8px;
+}
+.product-card p {
+    color: #8ba6c9;
+    margin: 4px 0;
+    font-size: 14px;
+}
+.product-card button {
+    margin-top: 10px;
+    margin-right: 8px;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+}
+#button1 {
+    background-color: #102c50;
+    color: #00d9ff;
+}
+#button1:hover {
+    background-color: #164477;
+    box-shadow: 0 0 15px #164477;
+}
+#button2 {
+    background-color: #351b36;
+    color: #d98aff;
+}
+#button2:hover {
+    background-color: #512451;
+    box-shadow: 0 0 15px #512451;
+}
+
+
+
+/* كلام متحرك مع اضاءه*/
+.nour1911 {
+    width: 16ch;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #00e5ff;
+    text-shadow: 0 0 5px #00e5ff;
+    border-right: 2px solid #00e5ff;
+    animation: typing 3s steps(16) infinite, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    50%, 80% { width: 16ch; }
+    100% { width: 0; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
